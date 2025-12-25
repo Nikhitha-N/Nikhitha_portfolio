@@ -120,3 +120,12 @@ footer {
   color: #868e96;
   text-align: center;
 }
+
+.project-actions{
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
