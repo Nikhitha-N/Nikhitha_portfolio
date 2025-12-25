@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Nikhitha's Portfolio</title>
     <link rel="icon" href="Image/engineer.ico" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="skill.css" />
     <link rel="stylesheet" href="dark-mode.css" />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -30,6 +33,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -46,23 +50,12 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-WZXPVQDR2Q"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-WZXPVQDR2Q");
-  </script>
   <body class="container-fluid body_section">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand brand-name" href="#">Nikhitha</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -81,9 +74,7 @@
               <a class="nav-link headerachor" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link headerachor" href="education.html"
-                >Education</a
-              >
+              <a class="nav-link headerachor" href="education.html">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link headerachor" href="skill.html">Skills</a>
@@ -95,112 +86,154 @@
               <a class="nav-link headerachor" href="contact.html">Contact Me</a>
             </li>
             <li>
-              <iframe
-                id="toggle-iframe"
-                onload="onIframeLoad()"
-                src="toggle.html"
-              ></iframe>
+              <iframe id="toggle-iframe" onload="onIframeLoad()" src="toggle.html"></iframe>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="Section1">
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <img class="skill-img" src="Image/Skills.svg" alt="" />
+
+    <!-- TOP (image + heading) -->
+    <section class="skills-hero">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <img class="skill-img" src="Image/Skills.svg" alt="Skills Illustration" />
         </div>
-        <div class="col-lg-6 col-md-6">
-          <div id="SkillBox">
-            <center class="Skill-heading">Proficiency</center>
-            <div class="SkillBar">
-              <div id="Skill-Cplus">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:c-plusplus"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
 
-            <div class="SkillBar">
-              <div id="Skill-C">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:c"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+        <div class="col-lg-6 col-md-12">
+          <h1 class="skills-title">Skills</h1>
+          <p class="skills-subtitle">
+            A snapshot of my technical proficiencies across data, machine learning, geospatial AI, and dashboards.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="SkillBar">
-              <div id="Skill-Python">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:python"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+    <!-- FULL-WIDTH GRID (no empty left side) -->
+    <section class="skills-grid-wrap">
+      <div class="skills-grid">
+        <!-- 1 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-code"></i></span>
+            <h3>Programming &amp; Core</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">R</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Linux/CLI</span>
+            <span class="chip">Jupyter</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">PyCharm</span>
+          </div>
+        </div>
 
-            <div class="SkillBar">
-              <div id="Skill-HTML">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:html-5"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+        <!-- 2 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-brain"></i></span>
+            <h3>Machine Learning &amp; Deep Learning</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">PyTorch</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Classification</span>
+            <span class="chip">Segmentation</span>
+            <span class="chip">CNNs (ResNet, EfficientNet)</span>
+            <span class="chip">U-Net</span>
+            <span class="chip">Cross-validation</span>
+            <span class="chip">Hyperparameter Tuning</span>
+            <span class="chip">Confusion Matrix</span>
+            <span class="chip">F1-score</span>
+            <span class="chip">IoU</span>
+            <span class="chip">ROC-AUC</span>
+          </div>
+        </div>
 
-            <div class="SkillBar">
-              <div id="Skill-CSS">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:css-3"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+        <!-- 3 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-globe"></i></span>
+            <h3>Geospatial AI &amp; Remote Sensing</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">PlanetScope</span>
+            <span class="chip">Sentinel</span>
+            <span class="chip">Landsat</span>
+            <span class="chip">LiDAR (.las/.laz)</span>
+            <span class="chip">Canopy Metrics</span>
+            <span class="chip">NDVI</span>
+            <span class="chip">SAVI</span>
+            <span class="chip">GNDVI</span>
+            <span class="chip">Raster/Vector Workflows</span>
+            <span class="chip">Spatial Joins</span>
+            <span class="chip">Reprojection</span>
+            <span class="chip">rasterio</span>
+            <span class="chip">geopandas</span>
+            <span class="chip">GDAL</span>
+          </div>
+        </div>
 
-            <div class="SkillBar">
-              <div id="Skill-JS">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="logos:javascript"
-                  data-inline="false"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+        <!-- 4 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-cogs"></i></span>
+            <h3>Data Engineering &amp; Pipelines</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">Data Cleaning</span>
+            <span class="chip">Feature Engineering</span>
+            <span class="chip">ETL / Pipelines</span>
+            <span class="chip">Reproducible Workflows</span>
+            <span class="chip">Validation / QC</span>
+            <span class="chip">Logging</span>
+            <span class="chip">Automation</span>
+            <span class="chip">GeoTIFF</span>
+            <span class="chip">CSV</span>
+            <span class="chip">HDF5</span>
+            <span class="chip">NetCDF</span>
+          </div>
+        </div>
 
-            <div class="SkillBar">
-              <div id="Skill-SQL">
-                <span
-                  class="Skill-Area iconify"
-                  data-icon="dashicons:database"
-                  data-inline="false"
-                  style="color: black"
-                  data-width="35"
-                  data-height="35"
-                ></span>
-              </div>
-            </div>
+        <!-- 5 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-chart-bar"></i></span>
+            <h3>Dashboarding &amp; Reporting</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">Tableau</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">KPI Design</span>
+            <span class="chip">Filters / Drilldowns</span>
+            <span class="chip">Stakeholder Reporting</span>
+            <span class="chip">Data Storytelling</span>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon"><i class="fas fa-chart-line"></i></span>
+            <h3>Visualization</h3>
+          </div>
+          <div class="chips">
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Seaborn</span>
+            <span class="chip">Plotly</span>
+            <span class="chip">Dashboard Design</span>
+            <span class="chip">Readable Visuals</span>
+            <span class="chip">Footnotes / Definitions</span>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="footer">Made with ❤️ by Nikhitha Nagalla</footer>
     <script src="dark-mode.js"></script>
   </body>

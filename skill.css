@@ -3,6 +3,7 @@ body {
   font-weight: 700;
   margin: 0;
 }
+
 .body_section {
   padding: 3% 5% 1%;
 }
@@ -18,8 +19,6 @@ a {
 
 .brand-name,
 .navbar-light .navbar-brand {
-  /* font-family: "Brush Script MT"; */
-  /* margin-bottom: 3px; */
   font-family: "Lovely Home";
   font-size: 50px;
   font-weight: bold;
@@ -29,10 +28,7 @@ a {
 @media only screen and (max-width: 764px) {
   .brand-name,
   .navbar-light .navbar-brand {
-    font-family: "Lovely Home";
     font-size: 40px;
-    font-weight: bold;
-    color: #351458;
   }
 }
 
@@ -46,367 +42,145 @@ a {
   background-color: #f1f1f1;
 }
 
-.Section1 {
-  padding: 4% 0 3%;
+/* --------- Skills Hero --------- */
+.skills-hero {
+  padding: 4% 0 1%;
 }
 
 .skill-img {
   width: 100%;
-  height: 100%;
-}
-
-.Skill-heading {
-  font-family: "Montserrat";
-  font-size: 40px;
-  font-weight: 300;
-}
-
-#SkillBox {
-  width: 95%;
   height: auto;
-  margin: 40px auto;
-  padding: 10px;
-  border-radius: 50px;
-  -o-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -moz-border-radius: 20px;
-}
-#SkillBox img {
-  width: 20%;
-  height: 10%;
-  margin: auto 35%;
-  padding: 10px;
-}
-.SkillBar {
-  width: 90%;
-  height: 50px;
-  position: relative;
-  border-radius: 20px;
-  /* background: rgba(17, 17, 17, .3); */
-  background: #c5c2ff;
-  margin: 20px auto;
+  max-height: 520px;
+  object-fit: contain;
 }
 
-#Skill-HTML {
-  width: 90%;
-  border-radius: 20px;
-  animation: Animate-HTML 4s;
-  -webkit-animation: Animate-HTML 4s;
-  -moz-animation: Animate-HTML 4s;
-  -o-animation: Animate-HTML 4s;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
+.skills-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1f1f1f;
 }
-@keyframes Animate-HTML {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 90%;
-  }
+
+.skills-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #868e96;
+  max-width: 520px;
 }
-@-webkit-keyframes Animate-HTML {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 90%;
-  }
+
+/* --------- Full Width Grid --------- */
+.skills-grid-wrap {
+  padding: 2% 0 3%;
 }
-@-moz-keyframes Animate-HTML {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 90%;
-  }
+
+/* Make it fill the page nicely */
+.skills-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
-@-o-keyframes Animate-HTML {
-  from {
-    width: 10px;
+
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
-  to {
-    width: 90%;
-  }
-}
-#Skill-CSS {
-  animation: Animate-CSS 5s;
-  -webkit-animation: Animate-CSS 5s;
-  -moz-animation: Animate-CSS 5s;
-  -o-animation: Animate-CSS 5s;
-  border-radius: 20px;
-  width: 70%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-CSS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 70%;
-  }
-}
-@-webkit-keyframes Animate-CSS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 70%;
-  }
-}
-@-moz-keyframes Animate-CSS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 70%;
-  }
-}
-@-o-keyframes Animate-CSS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 70%;
-  }
-}
-#Skill-Python {
-  border-radius: 20px;
-  animation: Animate-Python 5s;
-  -webkit-animation: Animate-Python 5s;
-  -moz-animation: Animate-Python 5s;
-  -o-animation: Animate-Python 5s;
-  width: 80%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-Python {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-webkit-keyframes Animate-Python {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-moz-keyframes Animate-Python {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-o-keyframes Animate-Python {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-#Skill-JS {
-  animation: Animate-JS 4s;
-  -webkit-animation: Animate-JS 4s;
-  -moz-animation: Animate-JS 4s;
-  -o-animation: Animate-JS 4s;
-  border-radius: 20px;
-  width: 65%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-JS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 65%;
-  }
-}
-@-webkit-keyframes Animate-JS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 65%;
-  }
-}
-@-moz-keyframes Animate-JS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 65%;
-  }
-}
-@-o-keyframes Animate-JS {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 65%;
+
+  .skills-title {
+    font-size: 44px;
   }
 }
 
-#Skill-C {
-  animation: Animate-C 4s;
-  -webkit-animation: Animate-C 4s;
-  -moz-animation: Animate-C 4s;
-  -o-animation: Animate-C 4s;
-  border-radius: 20px;
-  width: 80%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-C {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-webkit-keyframes Animate-C {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-moz-keyframes Animate-C {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-o-keyframes Animate-C {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-#Skill-Cplus {
-  animation: Animate-Cplus4s;
-  -webkit-animation: Animate-Cplus 4s;
-  -moz-animation: Animate-Cplus 4s;
-  -o-animation: Animate-Cplus 4s;
-  border-radius: 20px;
-  width: 85%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-Cplus {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 85%;
-  }
-}
-@-webkit-keyframes Animate-Cplus {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 85%;
-  }
-}
-@-moz-keyframes Animate-Cplus {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 85%;
-  }
-}
-@-o-keyframes Animate-Cplus {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 85%;
-  }
-}
-#Skill-SQL {
-  animation: Animate-SQL 4s;
-  -webkit-animation: Animate-SQL 4s;
-  -moz-animation: Animate-SQL 4s;
-  -o-animation: Animate-SQL 4s;
-  border-radius: 20px;
-  width: 80%;
-  height: 50px;
-  position: absolute;
-  background-color: #6c63ff;
-}
-@keyframes Animate-SQL {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-webkit-keyframes Animate-SQL {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-moz-keyframes Animate-SQL {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-@-o-keyframes Animate-SQL {
-  from {
-    width: 10px;
-  }
-  to {
-    width: 80%;
-  }
-}
-.Skill-Area {
-  z-index: 1;
-  float: left;
-  /* position: absolute; */
-  margin-top: 8px;
-  margin-left: 15px;
-  text-shadow: none;
-  color: #fff;
+/* --------- Skill Card --------- */
+.skill-card {
+  background: #ffffff;
+  border: 2px solid #cfcaff;
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.28);
 }
 
-@media only screen and (max-width: 950px) {
-  body,
-  html {
-    text-align: center;
-    font-size: 16px;
-    line-height: normal;
-  }
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.skill-card-header h3 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #2a1454;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #f1efff;
+  border: 2px solid #cfcaff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c63ff;
+  font-size: 18px;
+}
+
+/* --------- Chips --------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 2px solid #cfcaff;
+  background: #f5f4ff;
+  color: #2a1454;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Optional hover for chips */
+.chip:hover {
+  background: #6c63ff;
+  color: #ffffff;
+  border-color: #6c63ff;
+}
+
+/* --------- Dark Mode Compatibility (if your dark-mode.css adds a class) --------- */
+body.dark-mode .skills-title {
+  color: #f2f2f2;
+}
+
+body.dark-mode .skills-subtitle {
+  color: #c3c7cf;
+}
+
+body.dark-mode .skill-card {
+  background: #1c1c22;
+  border-color: #3a355e;
+}
+
+body.dark-mode .skill-card-header h3 {
+  color: #f2f2f2;
+}
+
+body.dark-mode .chip {
+  background: #2a263c;
+  border-color: #3a355e;
+  color: #f2f2f2;
 }
 
 footer {
