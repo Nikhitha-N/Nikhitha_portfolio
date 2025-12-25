@@ -1,3 +1,10 @@
+.email {
+  color: #6c63ff;
+}
+.email:hover {
+  color: black;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -209,3 +216,64 @@ footer {
   color: #868e96;
   text-align: center;
 }
+
+.mini-form-wrap{
+  max-width: 650px;
+  margin: 25px auto 10px;
+  padding: 18px 18px 16px;
+  border-radius: 16px;
+  border: 2px solid rgba(108, 99, 255, 0.18);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  text-align: left;
+}
+
+.mini-form-title{
+  font-weight: 800;
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.mini-form .form-group{
+  margin-bottom: 12px;
+}
+
+.mini-form label{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #351458;
+}
+
+.mini-form input,
+.mini-form textarea{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  font-weight: 600;
+  outline: none;
+}
+
+.mini-form input:focus,
+.mini-form textarea:focus{
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.submit-btn{
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+  align-items: center;
+}
+
+.submit-btn:hover{
+  color: black;
+  background-color: white;
+}
+.btn-center{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
