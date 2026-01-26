@@ -6,7 +6,7 @@
 
 A clean, beautiful and responsive portfolio templete with using only HTML and css.
 Later on add some javascript for animation and designing.
-visit the website [here.](https://github.com/Nikhitha-N/Nikhitha_portfolio)
+visit the website [here.](https://nikhitha-n.github.io/Nikhitha_portfolio/)
 
 ## Sections:
 
